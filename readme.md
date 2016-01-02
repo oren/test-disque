@@ -9,9 +9,10 @@ make
 
 Run 2 nodes
 ```
+export PATH=$PATH:~/projects/disque/disque/src
 cd node 1
-~/projects/disque/disque/src/disque-server .
+disque-server $(pwd)/disque.conf
 cd node 2
-~/projects/disque/disque/src/disque-server .
+disque-server $(pwd)/disque.conf
 ```
 
